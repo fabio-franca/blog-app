@@ -1,0 +1,21 @@
+<div class="card ml-5 mr-5 border-invisible">
+    <div class="card-header text-white text-center bg-info">
+        <h4>LOGIN</h4>
+        <p class="text-white">Faça seu login abaixo:</p>
+    </div>
+    <div class="card-body pl-5 pr-5 highlight">
+        <form action="/usuarios/login" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="form-group col-md-6">
+                     <label for="senha">Senha</label>
+                     <input type="password" class="form-control" name="senha" required>
+                </div>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit">Entrar</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+npm install express express-handlebars body-parser mongoose --save 
+
+npm install --save express-session
+nom install connect-flash

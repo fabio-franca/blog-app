@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1 class="display-4">Bem-vindo ao BlogApp</h1>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus sapiente nisi ducimus nam ab adipisci consequatur illum, beatae doloremque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sapiente?</p>
+  <hr class="my-4">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, sed.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+</div>
+<hr>
+<h2 class="text-center mt-5 mb-4 text-secondary">Confira nossas postagens recentes</h2>
+{{#each postagens}}
+<div class="card ml-5 mr-5 mt-2 mb-2">
+    <div class="card-body">
+        <h3>{{titulo}}</h3>
+        <p class="badge badge-info">{{categoria.descricao}}</p>
+        <div class="d-flex justify-content-between">
+            <p>{{descricao}}</p>
+            <a href="/postagem/{{slug}}"><button class="btn btn-primary">Leia mais</button></a>
+        </div>
+        <hr>
+        <small>Data de publicação: {{data}}</small>
+    </div>
+</div>
+{{else}}
+    <p class="text-muted">Nenhuma postagem encontrada</p>
+{{/each}}

@@ -1,0 +1,49 @@
+{{#each erros}}
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        {{texto}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {{else}}
+{{/each}}
+<div class="card ml-5 mr-5 border-invisible">
+    <div class="card-header text-white text-center bg-info">
+        <h4>Registre-se agora!</h4>
+        <p class="text-white">Crie sua conta abaixo</p></div>
+    <div class="card-body  pl-5 pr-5 highlight">
+        <form action="" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="descricao" class="form-control" name="nome" required>
+                </div> 
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" name="email" required>
+                </div>   
+                <div class="form-group col-md-4">
+                    <label for="senha">Senha</label>
+                    <div class="input-group">
+                        <input type="password" id="senha" class="form-control" name="senha" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="bi bi-key"></i></span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="form-group col-md-4">
+                    <label for="senha2">Confirmação de Senha</label>
+                    <div class="input-group">
+                        <input type="password" id="senha2" class="form-control right-border-none" name="senha2" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Criar conta</button>
+        </form>
+    </div>
+</div>
